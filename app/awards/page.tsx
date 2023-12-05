@@ -3,38 +3,32 @@
 import Link from "next/link";
 import { Card } from "../components/card";
 import { Navigation } from "../components/nav";
-import { Bird, DatabaseZap, Diamond, FileJson, ServerCog, Swords } from "lucide-react";
+import { BookmarkCheck, Medal, Trophy } from "lucide-react";
 const awards = [
 	{
-		icon: <Bird size={20} />,
-		desc: "highly experienced, flutter is a cross-platform framework to create mobile apps developed by Google. Mainly using Dart Language.",
-		skill: "Flutter",
+		icon: <Trophy size={20} />,
+		href: "",
+		desc: "3rd place, Lomba Kompetensi Siswa (LKS) is a competition held by Dinas Pendidikan Jawa Barat for Vocational High School. Hereby, I volunteered in Cyber Security chamber which a competition in defending/fortifiying server and network against attackers, and also attacking/exploitating at instructed server",
+		award: "LKS Cyber Security Tingkat Provinsi Jawa Barat Tahun 2022",
 	},
 	{
-		icon: <ServerCog size={20} />,
-		desc: "moderately experienced, especially in creating systems logic, authentication, services, and security",
-		skill: "Backend Dev",
+		icon: <Trophy size={20} />,
+		href: "",
+		desc: "3rd place, Lomba Kompetensi Siswa (LKS) is a competition held by Dinas Pendidikan Jawa Barat for Vocational High School. Another fight but the results still the same :)",
+		award: "LKS Cyber Security Tingkat Provinsi Jawa Barat Tahun 2023",
 	},
     {
-        icon: <DatabaseZap size={20} />,
-        desc: "moderately experienced, especially in fabricating efficient and effective queries for large database server requests",
-        skill: "Database Engineer"
-    },
-	{
-		icon: <Swords size={20} />,
-		desc: "beginnerly experienced, know basic stuffs of web vulnerabilities and simple exploitation techniques",
-		skill: "Web Pentesting",
+		icon: <Medal size={20} />,
+		href: "",
+		desc: "Best male students of 2023 graduation in Vocational High School 4 Bandung",
+		award: "Siswa Terbaik Putra SMKN 4 Bandung 2022-2023"
 	},
 	{
-		icon: <Diamond size={20} />,
-		desc: "moderately experienced, usually made HTTP REST API using this freshly Google's developed language",
-		skill: "Golang",
-	},
-    {
-		icon: <FileJson size={20} />,
-		desc: "moderately experienced, usually made HTTP REST API using this freshly Google's developed language",
-		skill: "Nextjs",
-	},
+		icon: <BookmarkCheck size={20} />,
+		href: "",
+		desc: "Approved Junior Mobile Programmer Certificate, issued by LSP Informatika at 2023",
+		award: "Junior Mobile Programmer Certificate"
+	}
 ];
 export default function Awards() {
     return (
@@ -57,11 +51,11 @@ export default function Awards() {
 									{s.icon}
 								</span>{" "}
 								<div className="z-10 flex flex-col items-center">
-									<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display">
-										{s.handle}
+									<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 group-hover:text-white font-display text-center">
+										{s.award}
 									</span>
 									<span className="mt-4 text-sm text-center duration-1000 text-zinc-400 group-hover:text-zinc-200">
-										{s.label}
+										{s.desc}
 									</span>
 								</div>
 							</Link>
