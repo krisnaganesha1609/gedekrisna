@@ -49,7 +49,7 @@ export default function Contact() {
 						<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 flex flex-col items-center group-hover:text-white font-display text-center">
 								
 									<PersonStanding size={50} />
-								It's me!
+								It&apos;s me!
 							</span>
 						<div className="tengahan w-full">
 							
@@ -58,7 +58,8 @@ export default function Contact() {
 						</div>
 					</Card>
 					{socials.map((s) => (
-						<Card>
+						<div key={s.label}>
+							<Card>
 							<Link
 								href={s.href}
 								target="_blank"
@@ -81,6 +82,8 @@ export default function Contact() {
 								</div>
 							</Link>
 						</Card>
+						</div>
+						
 					))}
 				</div>
 			</div>

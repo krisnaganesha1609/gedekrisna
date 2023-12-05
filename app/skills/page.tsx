@@ -26,7 +26,7 @@ const skills = [
 	},
 	{
 		icon: <Diamond size={20} />,
-		desc: "moderately experienced, usually made HTTP REST API using this freshly Google's developed language",
+		desc: "moderately experienced, usually made HTTP REST API using this freshly Googles developed language",
 		skill: "Golang",
 	},
     {
@@ -42,7 +42,8 @@ export default function Skills() {
             <div className="container flex items-center justify-center min-h-screen px-4 mx-auto pt-20">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
 					{skills.map((s) => (
-						<Card>
+						<div key={s.skill}>
+							<Card>
 							<div
 								className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
 							>
@@ -63,6 +64,8 @@ export default function Skills() {
 								</div>
 							</div>
 						</Card>
+						</div>
+						
 					))}
 				</div>
 			</div>
