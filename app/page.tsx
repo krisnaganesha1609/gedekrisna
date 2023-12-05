@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import Particles from "./components/particles";
+import Image from "next/image";
 
 const navigation = [
   {name: "Skills", href:"/skills"},
@@ -25,13 +26,14 @@ export default function Home() {
           ))}
         </ul>
       </nav>
-      <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
+        <div className="hidden w-screen h-px animate-glow md:block animate-fade-left bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
       <Particles
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
-      <h1 className="z-10 text-4xl text-transparent duration-1000 bg-white cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text ">
-        Gede Krisna
+      
+      <h1 className="z-10 text-4xl text-transparent duration-1000 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text">
+        <span className="bg-[linear-gradient(to_right,#0F0F0F,#232D3F,#005B41,#008170)] bg-300% bg-min100% animate-names text-transparent bg-clip-text">Gede Krisna</span>
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -48,6 +50,8 @@ export default function Home() {
           
         </h2>
       </div>
+      
+      
     </div>
   );
 
