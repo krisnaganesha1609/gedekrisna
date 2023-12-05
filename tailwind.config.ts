@@ -47,8 +47,8 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
-				"names": "texts 10s infinite alternate-reverse",
-				"fade-in": "fade-in 3s ease-in-out forwards",
+				"names": "texts 3s infinite alternate-reverse",
+				"fade-in": "fade-in 4s ease-in-out forwards",
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",

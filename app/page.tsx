@@ -33,7 +33,9 @@ export default function Home() {
       />
       
       <h1 className="z-10 text-4xl text-transparent duration-1000 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text">
-        <span className="bg-[linear-gradient(to_right,#0F0F0F,#232D3F,#005B41,#008170)] bg-300% bg-min100% animate-names text-transparent bg-clip-text">Gede Krisna</span>
+        <span className="bg-[linear-gradient(to_right,#0F0F0F,#232D3F,#EAD7BB,#FFF2D8)] bg-300% bg-min100% animate-names text-transparent bg-clip-text">
+          Gede Krisna
+        </span>
       </h1>
 
       <div className="hidden w-screen h-px animate-glow md:block animate-fade-right bg-gradient-to-r from-zinc-300/0 via-zinc-300/50 to-zinc-300/0" />
@@ -56,3 +58,5 @@ export default function Home() {
   );
 
 }
+
+// #0F0F0F,#232D3F,#005B41,#008170

@@ -18,8 +18,8 @@ export const Header: React.FC<Props> = ({ project }) => {
 	const links: { label: string; href: string }[] = [];
 	if (project.repository) {
 		links.push({
-			label: "GitHub",
-			href: `https://github.com/${project.repository}`,
+			label: "GitHub/Gitlab",
+			href: `https://${project.repository}`,
 		});
 	}
 	if (project.url) {
