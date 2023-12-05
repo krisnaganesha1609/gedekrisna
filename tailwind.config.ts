@@ -11,7 +11,14 @@ const config: Config = {
 		"content/**/*.mdx",
   ],
   theme: {
+	backgroundSize: {
+		'300%': '300%'
+	},
+	backgroundPosition: {
+		'min100%': '-100%'
+	},
     extend: {
+
       typography: {
 				DEFAULT: {
 					css: {
@@ -40,12 +47,21 @@ const config: Config = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       animation: {
+				"names": "texts 10s infinite alternate-reverse",
 				"fade-in": "fade-in 3s ease-in-out forwards",
 				title: "title 3s ease-out forwards",
 				"fade-left": "fade-left 3s ease-in-out forwards",
 				"fade-right": "fade-right 3s ease-in-out forwards",
 			},
 			keyframes: {
+				"texts": {
+					"from": {
+						"background-position": "0%"
+					},
+					"to": {
+						"background-position": "100%"
+					}
+				},
 				"fade-in": {
 					"0%": {
 						opacity: "0%",

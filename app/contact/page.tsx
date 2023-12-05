@@ -1,8 +1,9 @@
 "use client";
-import { Github, Mail, Gitlab, Linkedin, Instagram } from "lucide-react";
+import { Github, Mail, Gitlab, Linkedin, Instagram, Car, ArrowBigRight, PersonStanding } from "lucide-react";
 import Link from "next/link";
 import { Navigation } from "../components/nav";
 import { Card } from "../components/card";
+import Image from "next/image";
 
 const socials = [
 	{
@@ -37,12 +38,25 @@ const socials = [
 	},
 ];
 
-export default function Example() {
+export default function Contact() {
 	return (
 		<div className=" bg-gradient-to-tl from-zinc-900/0 via-zinc-900 to-zinc-900/0">
 			<Navigation />
 			<div className="container flex items-center justify-center min-h-screen px-4 mx-auto pt-20">
 				<div className="grid w-full grid-cols-1 gap-8 mx-auto mt-32 sm:mt-0 sm:grid-cols-3 lg:gap-16">
+					<Card>
+						<div className="base flex justify-center items-center p-4 relative flex-col gap-4 duration-700 group lg:mt-36">
+						<span className="lg:text-xl font-medium duration-150 xl:text-3xl text-zinc-200 flex flex-col items-center group-hover:text-white font-display text-center">
+								
+									<PersonStanding size={50} />
+								It's me!
+							</span>
+						<div className="tengahan w-full">
+							
+							<Image src={"/myphoto.jpg"} alt="My Photo" width={1000} height={100} className="gambar" />
+						</div>
+						</div>
+					</Card>
 					{socials.map((s) => (
 						<Card>
 							<Link
