@@ -31,7 +31,7 @@ const skills = [
 	},
     {
 		icon: <FileJson size={20} />,
-		desc: "moderately experienced, usually made HTTP REST API using this freshly Google's developed language",
+		desc: "beginnerly experienced, my comfort framework to accomplish frontend web jobs",
 		skill: "Nextjs",
 	},
 ];
