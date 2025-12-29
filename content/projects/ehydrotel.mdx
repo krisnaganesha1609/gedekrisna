@@ -1,0 +1,85 @@
+---
+title: IoT x Mobile Apps - eHydroTel
+description: A mobile application for monitoring and controlling hydroponic IoT systems. Built with Flutter and Clean Architecture, featuring real-time sensor data via WebSocket, device management, and plant session monitoring.
+repository: private
+date: 2025-10-15
+---
+
+# eHydroTel
+
+This project is a **mobile application for controlling and monitoring hydroponic IoT devices**, designed to help users manage plant growth through real-time data visualization and device interaction.
+
+The application integrates directly with IoT hardware to receive live **pH and PPM sensor data** via WebSocket, enabling accurate monitoring and timely intervention during plant growth cycles.
+
+---
+
+## Highlights
+- Real-time IoT data streaming using WebSocket  
+- Clean Architecture for scalable feature growth  
+- Secure authentication with login and signup  
+- Designed for long-running plant monitoring sessions  
+
+---
+
+## Core features
+- **Authentication**
+  - User registration and login
+  - Secure session handling
+- **Plant Session Dashboard**
+  - Create and monitor plant growth sessions
+  - Track lifecycle status per plant
+- **Device Registration & Monitoring**
+  - Register hydroponic IoT devices
+  - Monitor device status and connectivity
+- **Real-time Sensor Data**
+  - Live pH and PPM updates via WebSocket
+  - Automatic UI refresh without polling
+- **Application Notifications**
+  - Alerts for abnormal pH/PPM values
+  - Device status notifications
+
+---
+
+## Tech stack
+- **Mobile:** Flutter
+- **State Management:** Riverpod
+- **Routing:** GoRouter
+- **Networking:** HTTP Client
+- **Realtime Communication:** WebSocket
+- **Data Modeling:** Freezed
+- **Architecture:** Clean Architecture
+
+---
+
+## Architecture overview
+1. **Presentation Layer**
+   - Flutter UI widgets
+   - Riverpod providers and notifiers
+2. **Domain Layer**
+   - Business logic for plant sessions and devices
+   - Use cases for realtime data processing
+3. **Data Layer**
+   - REST API integration for CRUD operations
+   - WebSocket service for realtime sensor streaming
+
+WebSocket streams are handled as reactive data sources and injected into the presentation layer via providers.
+
+---
+
+## Technical challenges
+- Handling unstable IoT connectivity and reconnection logic  
+- Synchronizing REST-based state with realtime WebSocket updates  
+- Designing a UI that remains readable during continuous data changes  
+
+---
+
+## Impact & lessons learned
+- WebSocket integration is critical for responsive IoT monitoring systems  
+- Clean Architecture greatly simplifies feature isolation and testing  
+- Real-time data visualization must balance accuracy with UI stability  
+
+---
+
+## Credits
+- Role: Mobile & IoT Application Developer
+- Domain: Smart Agriculture / Hydroponics

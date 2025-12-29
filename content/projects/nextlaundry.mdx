@@ -1,20 +1,73 @@
 ---
 title: NEXTLAUNDRY
-description: Nextlaundry is a web-based application built by React JS and Go Lang. Act as a laundry management application for admin users. 
+description: NEXTLAUNDRY — a production-minded laundry management web app. Frontend built with React; backend and REST API implemented in Go; MySQL for persistent storage. Designed for admin users to manage orders, customers, and pricing with clarity and performance
 repository: github.com/krisnaganesha1609/nextlaundry
 date: 2023-03-29
 ---
 
-- Built with React JS
-- Database with MySQL
-- REST API & Backend Services with Go Lang
+## NEXTLAUNDRY
+NEXTLAUNDRY is a web-based laundry management application focused on admin workflows: order intake, progress tracking, pricing management, and basic reporting. The project pairs a React-powered frontend with a performant Go backend and MySQL storage to deliver a responsive UI and a robust REST API surface for integrations.
+
+## Highlights
+
+- Clear separation of concerns: React for UI, Go for backend services and REST API, MySQL for data persistence.
+
+- Designed for admin efficiency: quick order creation, status updates, and simple reporting.
+
+- Lightweight, production-oriented stack chosen for speed and maintainability.
+
+## Key features
+
+- Order management (create / update / status tracking)
+
+- Customer directory and contact details
+
+- Pricing and service configuration (e.g., per-item or per-weight rules)
+
+- Basic reporting and summary views for daily activity
+
+- REST API for third-party integrations or mobile clients
+
+## Tech stack
+
+- Frontend: React (component-based UI, client-side routing)
+
+- Backend: Go (REST API, business logic, performance-oriented concurrency)
+
+- Database: MySQL (relational data model for orders/customers/pricing)
+
+- Deployment: Built to run on typical cloud providers or VPS; designed for containerisation.
+
+## Architecture (overview)
+
+1. React UI — single-page application that consumes the backend REST endpoints.
+
+2. REST API (Go) — exposes endpoints for orders, customers, pricing, and reports; responsible for validation and business rules.
+
+3. MySQL — stores normalized tables for orders, customers, service types, and admin accounts.
 
 ## Mockup
 
-[![](/nextlaundry/1.jpg)]
+`Landing Page`
+![](/nextlaundry/1.jpg)
 
-[![](/nextlaundry/2.jpg)]
 
-[![](/nextlaundry/3.jpg)]
+`Auth Page`
+![](/nextlaundry/2.jpg)
 
-[![](/nextlaundry/4.jpg)]
+
+`Dashboard Page`
+![](/nextlaundry/3.jpg)
+
+
+`Member Page`
+![](/nextlaundry/4.jpg)
+
+
+## Impact & lessons learned
+
+- Combining a modern React UI with a Go backend gave an excellent balance of developer ergonomics and runtime performance.
+
+- The project highlights the value of a small, focused API surface for admin workflows — simpler endpoints reduce UI complexity.
+
+- Future improvements could include authentication/authorization, background job processing for bulk operations, and richer analytics dashboards.

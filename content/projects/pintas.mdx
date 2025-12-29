@@ -1,22 +1,77 @@
 ---
-title: PINTAS SMKN 4 Bandung
-description: PINTAS (Perpustakaan dan Informasi Digital Sekolah) is a mobile-based application built by Flutter. Act as digital solution for students in case they want to go to the library. 
+title: PINTAS — SMKN 4 Bandung
+description: PINTAS (Perpustakaan dan Informasi Digital Sekolah) is a Flutter-based mobile application that digitalizes school library services, enabling students to browse catalogs, request loans, and access library information efficiently.
 repository: gitlab.com/Dittsxa/pintas-app
 date: 2021-06-21
 ---
 
-- Built with Flutter
-- Backend & Database with Firebase
-- CMS with PHP Laravel
+# PINTAS — Digital School Library System
 
-## Mockup
+**PINTAS** is a mobile application developed to modernize library operations at SMKN 4 Bandung. The system provides students with easy access to book catalogs, availability status, and borrowing workflows, while offering administrators a dedicated CMS for managing library data.
 
-[![](/pintas/1.jpg)]
+---
 
-[![](/pintas/2.jpg)]
+## Highlights
+- Mobile-first design optimized for daily student usage  
+- Real-time data synchronization using Firebase  
+- Dedicated CMS for librarians and administrators built with Laravel  
 
-[![](/pintas/3.jpg)]
+---
 
-[![](/pintas/4.jpg)]
+## Key features
+- Book catalog browsing and search (by category, author, or title)  
+- Real-time book availability and borrowing history  
+- Loan request and return tracking  
+- Admin dashboard (CMS) for managing books, users, and reports  
+- Secure user authentication via Firebase Auth  
 
-[![](/pintas/5.jpg)]
+---
+
+## Tech stack
+- **Mobile:** Flutter (Dart)  
+- **Backend & Realtime Services:** Firebase (Firestore / Realtime Database, Auth)  
+- **CMS / Admin Panel:** PHP Laravel  
+- **Deployment:** Firebase Hosting and standard PHP hosting / VPS  
+
+Repository: [gitlab.com/Dittsxa/pintas-app](https://gitlab.com/Dittsxa/pintas-app)
+
+---
+
+## Architecture overview
+1. **Flutter mobile app** — handles UI, client logic, and user interaction.  
+2. **Firebase services** — manages authentication, realtime data, and notifications.  
+3. **Laravel CMS** — web-based admin panel and REST services for managing library operations.
+
+---
+
+## Mockups / Screenshots
+
+[![](/pintas/1.jpg)](/pintas/1.jpg)  
+[![](/pintas/2.jpg)](/pintas/2.jpg)  
+[![](/pintas/3.jpg)](/pintas/3.jpg)  
+[![](/pintas/4.jpg)](/pintas/4.jpg)  
+[![](/pintas/5.jpg)](/pintas/5.jpg)
+
+> Screens show the book catalog, book details, borrowing flow, and basic admin management views.
+
+---
+
+## Run locally (quick start)
+> Refer to the repository README for exact environment configuration.
+
+```bash
+# Clone repository
+git clone https://gitlab.com/Dittsxa/pintas-app.git
+cd pintas-app
+
+# Flutter application
+cd app
+flutter pub get
+flutter run
+
+# CMS (Laravel)
+cd ../cms
+composer install
+cp .env.example .env
+php artisan migrate
+php artisan serve

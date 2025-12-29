@@ -1,0 +1,89 @@
+---
+title: NEVMOCK — RASA KOPI Backoffice
+description: A tablet-focused mobile backoffice application built for RASA KOPI café. Developed with Flutter and Clean Architecture, it provides analytics and full CRUD operations for daily café operations without requiring authentication.
+repository: private
+date: 2025-02-01
+---
+
+# RASA KOPI Café Backoffice Application
+
+A mobile backoffice application designed specifically for **RASA KOPI**, optimized for tablet usage in café environments. The application serves as an operational control center, enabling staff to monitor analytics and manage core business entities efficiently.
+
+Unlike typical POS or backoffice systems, this apps intentionally omits authentication to allow immediate access to operational features, prioritizing speed and usability in on-site scenarios.
+
+---
+
+## Highlights
+- Tablet-first UI optimized for landscape orientation  
+- Clean Architecture with strict separation of layers  
+- State management using Riverpod  
+- Scalable routing with GoRouter  
+- Immutable data models using Freezed  
+
+---
+
+## Core features
+- **Dashboard & Analytics**
+  - Daily sales overview
+  - Order volume and revenue summaries
+- **Menu Management**
+  - Create, update, delete menu items
+  - Category and pricing configuration
+- **Reservation Management**
+  - Manage customer reservations
+  - Assign tables and time slots
+- **Table Management**
+  - CRUD operations for café tables
+  - Table availability tracking
+- **Order Management**
+  - Create and update customer orders
+  - Track order status
+- **Supplier Management**
+  - Manage supplier data for ingredients and logistics
+
+---
+
+## Tech stack
+- **Mobile:** Flutter (Tablet-focused UI)
+- **State Management:** Riverpod
+- **Routing:** GoRouter
+- **Networking:** HTTP Client
+- **Data Modeling:** Freezed
+- **Architecture:** Clean Architecture (Presentation, Domain, Data layers)
+
+---
+
+## Architecture overview
+1. **Presentation Layer**
+   - Flutter UI
+   - Riverpod providers for state handling
+2. **Domain Layer**
+   - Business entities and use cases
+   - Repository abstractions
+3. **Data Layer**
+   - Remote data sources via REST API
+   - DTOs and model mapping using Freezed
+
+This structure ensures maintainability, testability, and ease of future feature expansion.
+
+---
+
+## Use case
+RASA KOPI Backoffice app is used by café staff on-site to:
+- Monitor business performance in real time
+- Manage operational data without switching systems
+- Reduce dependency on external POS dashboards
+
+---
+
+## Lessons learned
+- Tablet-first design requires careful layout and spacing decisions  
+- Clean Architecture significantly improves long-term scalability  
+- Removing authentication can improve UX in controlled environments, but must be paired with physical access control
+
+---
+
+## Credits
+- Developed for: **RASA KOPI Café**
+- Vendor: Nevmock
+- Role: Mobile Application Developer

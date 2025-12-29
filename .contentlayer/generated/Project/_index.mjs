@@ -3,5 +3,8 @@
 import projects__nextlaundryMdx from './projects__nextlaundry.mdx.json' assert { type: 'json' }
 import projects__pintasMdx from './projects__pintas.mdx.json' assert { type: 'json' }
 import projects__schedusMdx from './projects__schedus.mdx.json' assert { type: 'json' }
+import projects__rasakopiMdx from './projects__rasakopi.mdx.json' assert { type: 'json' }
+import projects__ehydrotelMdx from './projects__ehydrotel.mdx.json' assert { type: 'json' }
+import projects__smarthealthcareMdx from './projects__smarthealthcare.mdx.json' assert { type: 'json' }
 
-export const allProjects = [projects__nextlaundryMdx, projects__pintasMdx, projects__schedusMdx]
+export const allProjects = [projects__nextlaundryMdx, projects__pintasMdx, projects__schedusMdx, projects__rasakopiMdx, projects__ehydrotelMdx, projects__smarthealthcareMdx]

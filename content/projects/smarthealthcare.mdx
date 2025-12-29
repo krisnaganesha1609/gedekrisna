@@ -1,0 +1,106 @@
+---
+title: SmartHealthCare — Stunting Detection Platform
+description: SmartHealthCare is a full-stack web application developed during an internship at Indihealth. The platform supports researchers in detecting and analyzing stunting cases using multiple AI-based classification methods, combined with geospatial data visualization.
+repository: private / internal project
+date: 2025-05-03
+---
+
+# SmartHealthCare — Research Platform for Stunting Detection
+
+**SmartHealthCare** is a web-based research platform developed during an internship at **Indihealth**. The system is designed to assist researchers and health professionals in **detecting, analyzing, and visualizing stunting cases** using multiple AI classification approaches and geospatial mapping across Indonesia.
+
+The project combines a modern full-stack web application with an AI-powered backend, built collaboratively with a dedicated machine learning engineer.
+
+---
+
+## Project scope
+- Role: **Full-Stack Web Developer**
+- Domain: Public Health, Medical Research, Data Analytics
+- Collaboration: AI/ML backend developed by a separate team member
+- Target users: Researchers, analysts, and healthcare professionals
+
+---
+
+## Highlights
+- Multi-method AI-based stunting classification  
+- Interactive geospatial visualization of stunting distribution  
+- Clean separation between web frontend and AI inference services  
+- Designed for research workflows and data exploration  
+
+---
+
+## Core features
+- **Authentication & Authorization**
+  - Secure login system for researchers and administrators
+- **Stunting Detection Module**
+  - Upload and process health data
+  - AI classification results served via REST API
+- **Analytics Dashboard**
+  - Summary statistics and classification outcomes
+  - Dataset-level insights for researchers
+- **Geospatial Mapping**
+  - Interactive maps using MapTiler
+  - Visualization of stunting distribution across Indonesian regions
+- **Data Management**
+  - CRUD operations for research datasets
+  - Structured storage for patient and regional data
+
+---
+
+## Tech stack
+### Frontend
+- **React.js**
+- **Material Tailwind** (UI components and layout)
+- **REST API consumption** for AI inference and data services
+
+### Backend & AI Services
+- **Python**
+- **FastAPI** (AI service layer)
+- **Uvicorn** (ASGI server)
+- **AI / ML libraries** for stunting classification (model experimentation and inference)
+
+### Database
+- **MySQL**
+- **SQLAlchemy ORM**
+
+### Mapping & Visualization
+- **MapTiler** for geospatial data visualization
+
+---
+
+## System architecture overview
+1. **Web Frontend (React)**
+   - User authentication
+   - Dashboard, analytics, and map visualization
+2. **Backend Services**
+   - REST endpoints for data management
+   - AI inference endpoints exposed via FastAPI
+3. **AI Classification Layer**
+   - Multiple classifier models for stunting detection
+   - Model results returned as structured JSON
+4. **Database Layer**
+   - MySQL with SQLAlchemy for relational data modeling
+
+This modular architecture allows independent scaling and experimentation of AI models without affecting the frontend.
+
+---
+
+## Technical challenges
+- Integrating AI inference services with a production-grade web frontend  
+- Handling large research datasets efficiently  
+- Designing map-based visualizations that remain readable at national scale  
+- Maintaining clean API contracts between web and AI services  
+
+---
+
+## Impact & lessons learned
+- Close collaboration between full-stack and AI roles is critical in research-driven platforms  
+- Separating AI inference into dedicated services improves maintainability and experimentation speed  
+- Geospatial visualization significantly enhances interpretability of public health data  
+
+---
+
+## Credits
+- Company: **Indihealth**
+- Project type: Internship / Internal Research Platform
+- Role: Full-Stack Web Developer
