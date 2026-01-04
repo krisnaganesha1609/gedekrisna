@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { Card } from "../components/card";
 import { Navigation } from "../components/nav";
-import { BookmarkCheck, Medal, Trophy } from "lucide-react";
+import { BookmarkCheck, LucideFileQuestion, Medal, Trophy } from "lucide-react";
 const awards = [
   {
     icon: <Trophy size={20} />,
@@ -35,6 +35,12 @@ const awards = [
     desc: "Approved Junior Mobile Programmer Certificate, issued by LSP Informatika at 2023",
     award: "Junior Mobile Programmer Certificate",
   },
+  {
+    icon: <LucideFileQuestion size={20} />,
+    href: "/blankkk_or_is_it.txt",
+    desc: "Please help me uncover what is this certificate for, because I have forgotten its purpose :D",
+    award: "Is this even a certificate? It looks blank to me",
+  }
 ];
 export default function Awards() {
   return (
@@ -48,6 +54,7 @@ export default function Awards() {
                 <Link
                   href={s.href}
                   target="_blank"
+                  {...(s.href.startsWith('/blankkk_or_is_it.txt') ? { download: true } : {})}
                   className="p-4 relative flex flex-col items-center gap-4 duration-700 group md:gap-8 md:py-24  lg:pb-48  md:p-16"
                 >
                   <span

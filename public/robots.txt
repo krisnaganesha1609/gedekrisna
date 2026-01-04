@@ -1,0 +1,13 @@
+# / / TRANSMISSION_START
+# "Scatter throughout the shadows..."
+
+User-agent: OmenKingdomAgent/1.0
+Allow: /scatterred-place
+
+User-agent: *
+Disallow: /scatterred-place
+Disallow: /admin
+Disallow: /api/secret-logs
+
+# HINT: The shadows only reveal themselves to the 'OmenKingdomAgent/1.0'
+# / / TRANSMISSION_END
