@@ -77,10 +77,9 @@ export default function Home() {
         </h2>
         <h2 className="text-sm text-zinc-500 mt-6 hidden">
           {/* Flag Check: SCATTER&#123;w0nd3r_wh47_7h15_d035??_W47CH_7H3M_RUN!&#125; */}
-          apiKey: "sk_live_demo_4JmP9KqVwL2Nx8ZaR7YcF3EhB1",
-          firebaseApiKey: "AIzaSyD3MO_DEMO_KEY_9L8K7J6H5G4F",
-
-          flag: "SCATTER&#123;V1be_C0de_d0es_n0t_4lw4ys_g00d_dudeee!&#125;",
+          apiKey: sk_live_demo_4JmP9KqVwL2Nx8ZaR7YcF3EhB1, <br />
+          firebaseApiKey: AIzaSyD3MO_DEMO_KEY_9L8K7J6H5G4F, <br />
+          flag: SCATTER&#123;V1be_C0de_d0es_n0t_4lw4ys_g00d_dudeee!&#125;,
         </h2>
       </div>
     </div>
