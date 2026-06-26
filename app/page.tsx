@@ -11,6 +11,7 @@ const navigation = [
 
 export default function Home() {
   return (
+
     <div className="flex flex-col items-center justify-center w-screen h-screen overflow-hidden bg-gradient-to-tl from-black via-zinc-600/20 to-black">
       <nav className="my-16 animate-fade-in">
         <ul className="flex items-center justify-center gap-4">
@@ -30,6 +31,21 @@ export default function Home() {
         className="absolute inset-0 -z-10 animate-fade-in"
         quantity={100}
       />
+
+      {/* const config = {
+        apiUrl: "https://api.demo-company.com/v1",
+
+        apiKey: "sk_live_demo_4JmP9KqVwL2Nx8ZaR7YcF3EhB1",
+
+        firebaseApiKey: "AIzaSyD3MO_DEMO_KEY_9L8K7J6H5G4F",
+
+        supabaseAnonKey:
+         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkRFTU8ifQ.demo_payload.demo_signature",
+
+        environment: "production",
+
+        flag: "SCATTER{V1be_C0de_d0es_n0t_4lw4ys_g00d_dudeee!}",
+     }; */}
 
       <h1 className="z-10 text-4xl text-transparent duration-1000 cursor-default text-edge-outline animate-title font-display sm:text-6xl md:text-9xl whitespace-nowrap bg-clip-text">
         <span className="bg-[linear-gradient(to_right,#0F0F0F,#232D3F,#EAD7BB,#FFF2D8)] bg-300% bg-min100% animate-names text-transparent bg-clip-text">
@@ -60,7 +76,11 @@ export default function Home() {
           Something might be hidden here... if you know what I mean
         </h2>
         <h2 className="text-sm text-zinc-500 mt-6 hidden">
-          Flag Check: SCATTER&#123;w0nd3r_wh47_7h15_d035??_W47CH_7H3M_RUN!&#125;
+          {/* Flag Check: SCATTER&#123;w0nd3r_wh47_7h15_d035??_W47CH_7H3M_RUN!&#125; */}
+          apiKey: "sk_live_demo_4JmP9KqVwL2Nx8ZaR7YcF3EhB1",
+          firebaseApiKey: "AIzaSyD3MO_DEMO_KEY_9L8K7J6H5G4F",
+
+          flag: "SCATTER&#123;V1be_C0de_d0es_n0t_4lw4ys_g00d_dudeee!&#125;",
         </h2>
       </div>
     </div>

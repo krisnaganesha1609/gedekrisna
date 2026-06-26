@@ -4,5 +4,8 @@ export const flagList: string[][] = [
 
     // Below one is added at 4 Jan 2026
     ["31008e1310a0d0e500e0aac6cd4123e596c5dbb07ba7cf6be70fb0b8c1a4aaa6", "I think that isn't a certificate... but okay, I'll take it :)"],
-    ["18773b0ce65401d3c6287797cd27a0b312e7eedeba99b4db2235b3fb4825bea6", "Here's my ID: IScattered #NESH"]
+    ["18773b0ce65401d3c6287797cd27a0b312e7eedeba99b4db2235b3fb4825bea6", "Here's my ID: IScattered #NESH"],
+
+    ["5eb357b9251b472ad4fdd85885cfb7af20f3428f931fad27a47df88d72a68f92", "Welcome to the world of CTF! I hope you enjoy it. You may freely explore the website for another challenge!"],
+    ["a34eb8f1c22e74eff64c7736c21c8a7e9f496e939088968facf3ee28b8e40788", "Perfect! You found the flag! But I think you can find more if you explore the website."],
 ];
